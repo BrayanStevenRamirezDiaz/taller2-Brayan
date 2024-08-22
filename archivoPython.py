@@ -8,7 +8,8 @@ def clear_screen():
 def print_smiley(position):
     # Imprime la carita feliz en una posición específica
     spaces = ' ' * position
-    print(f"{spaces}:-)\n")
+    print(f"{spaces}(´/´)\n")
+    print("Hola a Todos")
 
 def main():
     # Tamaño de la pantalla
@@ -19,12 +20,12 @@ def main():
             for position in range(width):
                 clear_screen()
                 print_smiley(position)
-                time.sleep(0.1)  # Ajusta el tiempo de espera para controlar la velocidad
+                time.sleep(0)  # Ajusta el tiempo de espera para controlar la velocidad
 
             for position in range(width - 1, -1, -1):
                 clear_screen()
                 print_smiley(position)
-                time.sleep(0.1)  # Ajusta el tiempo de espera para controlar la velocidad
+                time.sleep(0)  # Ajusta el tiempo de espera para controlar la velocidad
 
     except KeyboardInterrupt:
         # Permite detener el programa con Ctrl+C
